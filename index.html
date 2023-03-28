@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+                             /\
+                 db     |  ## ||  __   |
+              ___||_^__/_\_||_||__||__||_#__|____
+           .-'                                   `-.
+         .===========================================.
+       .'                  Hacktopia                  `.
+      ===================================================
+    .-----------------------------------------------------.
+   /_______________________________________________________\
+  /                                                         \
+ `-=-------------------------------------------------------=-'
+    `---.__                                         __.---'
+           `--.__                             __.--'
+                 `-._---------------------_.-'
+                     `-.---------------.-'
+                        `.           .'
+                          \         /   
+                           \_______/
+                              | |
+                              | |        Bespin
+                              | |
+-->
+
+<!-- it's coming... 
+        time to get to the bottom of this... -->
+
+<!-- Mirrored from archive.hackmit.org/2020/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2023 19:04:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!-- Link to local files -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg">
+    <title>HackMIT 2020</title>
+    <meta name="description" content="HackMIT 2020: Laying the tracks for a more connected future!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    
+
+    <meta name="theme-color" content="#1b4481">
+    <!-- Facebook Code -->
+    <meta property="og:title" content="HackMIT 2020" />
+    <meta property="og:url" content="https://hackmit.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Join us at MIT's largest hackathon. September 18-20!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/favicons/train_cover.png" />
+
+    <!-- Twitter Code -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@HackMIT" />
+    <meta property="twitter:creator" content="@HackMIT" />
+    <meta property="twitter:title" content="HackMIT 2020" />
+    <meta property="twitter:description" content="Join us at MIT's largest hackathon. September 18-20!" />
+    <meta property="twitter:image" content="./assets/favicons/train_cover.png" />
+    <meta property="twitter:image:alt" content="HackMIT 2020, September 18-20." />
+</head>
+
+<body>
+
+    <div id="body-container" style="overflow-x: hidden; overflow-y: hidden; position:relative">
+        <div id="cover" class="section">
+            <div class="content">
+                <div id="cover-desktop">
+                    <div class="navbar-wrap">
+                        <div class="navbar">
+                            <a href="#cover" class="navbar-btn hidden-mobile">
+                                <h4 class="navbar-txt">Home</h4>
+                            </a>
+                            <a href="#tracks" class="navbar-btn">
+                                <h4 class="navbar-txt">Tracks</h4>
+                            </a>
+                            <a href="#speakers" class="navbar-btn">
+                                <h4 class="navbar-txt">Speakers</h4>
+                            </a>
+                            <a href="#faq" class="navbar-btn">
+                                <h4 class="navbar-txt">Faq</h4>
+                            </a>
+                            <a href="#sponsors" class="navbar-btn">
+                                <h4 class="navbar-txt">Sponsors</h4>
+                            </a>
+                            <a href="https://archive.hackmit.org/" class="navbar-btn apply hidden-mobile">
+                                <h4 class="navbar-txt no-underline">Back</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="assets/img/Individual_Logo.png" class="logo" />
+                    <div id="page-title">
+                        <!-- <h1 id="title-header">Hackmit 2020</h1> -->
+                        <img id="title-header" src="assets/img/Title.svg" />
+                        <!-- <img id="title-header-outline" src="./assets/img/Outline_Text.svg" /> -->
+                        <h4 id="title-sub">Laying the tracks for a more connected future</h4>
+                        <h4 id="title-date">September 18-20, 2020</h4>
+                    </div>
+                </div>
+                <div id="cover-mobile">
+                    <div class="menu">
+                        <button id="menu-btn" class="hamburger hamburger--collapse" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <div id="menu-items" class="navbar">
+                            <div class="menu-row">
+                            <a href="#tracks" class="navbar-btn">
+                                <h4 class="navbar-txt">Tracks</h4>
+                            </a>
+                            <a href="#speakers" class="navbar-btn">
+                                <h4 class="navbar-txt">Speakers</h4>
+                            </a>
+                            </div>
+                            <div class="menu-row">
+                            <a href="#faq" class="navbar-btn">
+                                <h4 class="navbar-txt">Faq</h4>
+                            </a>
+                            <a href="#sponsors" class="navbar-btn">
+                                <h4 class="navbar-txt">Sponsors</h4>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/Individual_Logo.png" class="logo" />
+
+                    <!-- <h1 id="title-header">Hackmit 2020</h1> -->
+                    <img id="title-header" src="assets/img/Title.svg" />
+                    <h4 id="title-sub">Laying the tracks for a more connected future</h4>
+                    <h4 id="title-date">September 18-20, 2020</h4>
+                    <a href="https://archive.hackmit.org/" target="_blank" class="navbar-btn apply hidden-mobile">
+                        <h4 class="navbar-txt no-underline">Back</h4>
+                    </a>
+                </div>
+
+                <div>
+                    <img src="assets/img/Buildings.svg" class="building medium1"/>
+                    <img src="assets/img/Prudential.svg" class="building small1"/>
+                </div>
+            </div>
+        </div>
+
+        <!--         <a href="https://www.google.com" class="navbar-btn apply-mobile">
+            <h4 class="navbar-txt no-underline">Apply</h4>
+        </a> -->
+        <!--         <div id="station" class="section">
+        </div> -->
+        <img id="train" class="reset" src="assets/img/Train.svg" />
+        <div id="tracks" class="section">
+            <div class="cloud-section" id="cloud-section1">
+                <img id="cloud-layer-a" class="cloud-layer" src="assets/img/Cloud_Layer_top.svg" />
+                <img id="cloud-layer-b" class="cloud-layer" src="assets/img/Cloud_Layer_top.svg" />
+                <img id="cloud-layer-c" class="cloud-layer" src="assets/img/Cloud_Layer_top.svg" />
+            </div>
+            <div class="content">
+                <h1 class="header">Tracks</h1>
+                <div id="Ambulance-box" class="track-box">
+                    <img id="health-label" class="track-text" src="assets/img/health.svg">
+                    <svg id="Ambulance-bb" class="building-bb" viewBox="0 0 341.75 422.85">
+                        <polygon
+                            points="0.77 148.41 0 359.07 88.27 422.85 341.75 275.96 341.17 48.98 254.66 0 0.77 148.41" />
+                    </svg>
+                    <img id="Ambulance" class="vehicle" src="assets/img/Ambulance.svg">
+                    <div id="health-overlay" class="overlay">
+                        <div class="overlay-box">
+                            
+                            <img class="popup-road" src="assets/img/tracks_pop_up_road.svg" />
+                            <img class="close-button" src="assets/img/x_tracks.svg">
+                            <img id="Ambulance-popup" class="vehicle-popup" src="assets/img/Ambulance.svg">
+                            <h1 class="popup-title"> Health Tech </h1>
+                            <div class="overlay-text"> 
+                                <h3 class="popup-sub-title"> Description </h3>
+                                <p style = "text-indent : 1em;"> The Health Tech track aims to <b>improve the quality of life for individuals through health and assistance.</b> This includes a wide range of projects, such as tracking sleep for better sleep schedule maintenance, using machine learning on medical imaging to diagnose illnesses more accurately, utilizing speech-to-text to make resources more accessible to deaf patients, and much more.  </p>
+                                <h3 class="popup-sub-title"> Guiding Questions </h3>
+                                <ul>
+                                    <li>How can we make health services more accessible and more affordable?  </li>
+                                    <li>How can we encourage people to maintain healthy sleeping, activity, eating, etc habits?</li>
+                                    <li>How can we stay aware of the ongoing health situation in our local communities and states?</li>
+                                    <li>How can we make diagnosing illnesses more accurate and easier?</li>
+                                </ul>
+                                <h3 class="popup-sub-title"> Potential Topics </h3>
+                                <ul>
+                                    <li> <b>Assistive Tech: </b>Although technology has greatly improved to aid individuals with disabilities, the world is still inaccessible to them. How can we engineer various solutions to make the world more disability accessible? </li>
+                                    <li><b>Addictions: </b>How can we help individuals recovering from addictions stay clean at home and without breaking the bank?</li>
+                                    <li> <b>Mental Health: </b>Is there a way we can spread more mental health awareness as well as information, treatments, and solutions?</li>
+                                    <li><b>Remote Healthcare: </b>How do we make obtaining subscriptions and receiving non-surgical care easier for individuals in the face of a pandemic?</li>
+                                    <li><b>Staying Fit with Social Distancing: </b>How can we stay fit and be motivated to stay fit during situations like COVID-19? How can we workout with friends while practicing social distancing?</li>
+                                    <li><b>Patient Tracking: </b>Hospitals have a hard time keeping tracks of patients’ records outside of their walls. How can we implement a way to track patients and reduce this problem?</li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Past HackMIT Projects </h3>
+                                <ul>
+                                    <li><a href="http://leanonmeapp.com/" target="_blank" class="track-link">LeanOnMe: </a> An app to support people with cognitive differences</li>
+                                    <li><a href="https://devpost.com/software/detection-of-breast-cancer-based-on-image-analysis" target="_blank" class="track-link">Breast Cancer Detection: </a> Use of machine learning to break down images of breast cancer cells to aid in breast cancer diagnosis</li>
+                                    <li><a href="https://devpost.com/software/core-fh4pvs" target="_blank" class="track-link">Core: </a> An app connecting individuals looking to overcome drug addictions to a strong support network of volunteer mentors</li>
+                                    <li><a href="https://devpost.com/software/dispenser" target="_blank" class="track-link">DispenseRX: </a> An end-to-end prescription pipeline in the form of an app</li>
+                                    <li><a href="https://devpost.com/software/pilot-81xkaf" target="_blank" class="track-link">Pilot: </a> A motivational AI mood tracker that encourages users to break patterns of negative thinking by introducing new cultures and places</li>
+                                    <li><a href="https://devpost.com/software/verifast" target="_blank" class="track-link">Verifast: </a> Fast, secure log-in for healthcare professionals</li>  
+                                </ul>
+                                
+                                <h3 class="popup-sub-title"> Resources </h3>
+                                <ul>
+                                    <li><a href="https://console.cloud.google.com/marketplace/details/bigquery-public-datasets/covid19-public-data-program?_ga=2.61852266.-790027792.1588625217&amp;pli=1" target="_blank" class="track-link">Google Cloud: </a> Access to COVID-19 Public Datasets</li>
+                                    <li><a href="http://api.citybik.es/v2/?ref=public-apis" target="_blank" class="track-link"> City Bikes API: </a> Bike sharing data</li>
+                                    <li><a href="https://wonder.cdc.gov/Welcome.html" target="_blank" class="track-link">CDC WONDER: </a> Wide-ranging Online Data for Epidemiological Research</li>
+                                    <li><a href="https://apps.who.int/gho/data/node.resources" target="_blank" class="track-link">World Health Organization (WHO): </a>Health-related datasets on member countries</li>
+                                    <li><a href="https://healthcare.ai/software/" target="_blank" class="track-link">Healthcare.ai: </a> Machine learning in healthcare data</li>
+                                    
+                                    <li><a href="https://hcup-us.ahrq.gov/databases.jsp" target="_blank" class="track-link">HCUP: </a> Datasets from US hospitals</li>  
+                                    <li><a href="https://dev.fitbit.com/build/" target="_blank" class="track-link">FitBit: </a> APIs and details on how to develop an app to pair with FitBit devices</li>  
+                                    <li><a href="https://openneuro.org/" target="_blank" class="track-link">OpenNEURO: </a> Open platform for medical imaging data</li>  
+                                    <li><a href="https://healthdata.gov/" target="_blank" class="track-link">HealthData.gov: </a> Public health data in the United States</li>  
+                                    <li><a href="https://seer.cancer.gov/data-software/" target="_blank" class="track-link">SEER: </a> National Cancer Institute Surveillance, Epidemiology, and End Results</li>  
+                                    <li><a href="https://www.re3data.org/" target="_blank" class="track-link">R3 Data: </a> Registry of Research Data Repositories </li>  
+
+                                </ul>
+                            </div>
+                            <div class="bottom-clouds">
+                                <img class="popup-clouds" src="assets/img/track_popup_clouds_back.svg" />
+                                <img id="above-clouds" class="popup-clouds"
+                                    src="assets/img/track_popup_clouds_front.svg" />
+
+                                <img id="popup-building-a" class="building" src="assets/img/building_a.svg" />
+                                <img id="popup-building-b" class="building" src="assets/img/building_b.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Bus-box" class="track-box">
+                    <img id="education-label" class="track-text" src="assets/img/education.svg">
+                    <svg id="Bus-bb" class="building-bb" viewBox="0 0 493.93 407.14">
+                        <polygon
+                            points="1.39 263.07 250.93 407.13 493.43 270.48 493.93 155.53 229.81 0 0 130.9 1.39 263.07" />
+                    </svg>
+                    <img id="Bus" class="vehicle" src="assets/img/Bus.svg">
+                    <div id="education-overlay" class="overlay">
+                        <div class="overlay-box">
+                            <img class="popup-road" src="assets/img/tracks_pop_up_road.svg" />
+                            <img class="close-button" src="assets/img/x_tracks.svg">
+                            <img id="Bus-popup" class="vehicle-popup" src="assets/img/Bus.svg">
+                            <h1 class="popup-title"> Education </h1>
+                            <div class="overlay-text"> 
+                                <h3 class="popup-sub-title"> Description </h3>
+                                <p style = "text-indent : 1em;"> Education technology, or EdTech, is designed to <b> empower students of all ages and encourage lifelong learning.</b> These projects include any sort of technology that augments and enhances the learning experiences of students, whether it be studying traditional curriculum in a classroom or trying to pick up a new hobby or skill. This track also aims to increase the accessibility of information and accommodate various learning styles and strengths.  </p>
+                                <h3 class="popup-sub-title"> Guiding Questions </h3>
+                                <ul>
+                                    <li>How can we use EdTech to enhance learning in a traditional classroom setting?  </li>
+                                    <li>How can technology improve students’ retention of information?</li>
+                                    <li>Can education technology be used to make homework more useful and improve students’ experiences with their at-home assignments?</li>
+                                    <li>How can education technology make learning more engaging for students of all ages?</li>
+                                    <li>How can technology be used to introduce young students to STEM fields?</li>
+                                </ul>
+                                <h3 class="popup-sub-title"> Potential Topics </h3>
+                                <ul>
+                                    <li> <b>Writing, Grammar, and Literature: </b>How can technology be used to improve students’ reading and writing skills? </li>
+                                    <li><b>Languages: </b>What can be built to help people of all ages pick up a new language?</li>
+                                    <li> <b>Early STEM Education: </b>Introducing young students to STEM fields like computer science, math, and biology is critical to developing a lifelong love of learning. How can EdTech best be used to facilitate that passion?</li>
+                                    <li><b>Pre-K Education: </b>How can education technology be used to positively shape children’s formative years?</li>
+                                    <li><b>Organization and Stress Management: </b>With tasks on to-do lists piling up for students and professionals alike, how can EdTech help people stay on top of their workload and prevent them from becoming anxious or overwhelmed?</li>
+                                    <li><b>Cutting-edge Technologies: </b>Can you incorporate advances in fields like machine learning and augmented reality to improve learning experiences? How can these fields be introduced and taught to students of all ages?</li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Past HackMIT Projects </h3>
+                                <ul>
+                                    <li><a href="https://devpost.com/software/studydate-vxpws8" target="_blank" class="track-link">StudyDate: </a> An education platform for personalized and social learning: assess your current knowledge, identify your weaknesses, and find friends/mentors to help you learn!</li>
+                                    <li><a href="https://devpost.com/software/text2test" target="_blank" class="track-link">Text2Test: </a> A website that creates customized tests based on students’ notes</li>
+                                    <li><a href="https://devpost.com/software/afar" target="_blank" class="track-link">AFAR: </a> A learning platform that helps people with learning disabilities focus in distracting, noisy environments</li>
+                                    <li><a href="https://devpost.com/software/hackmit2019-qcu9y7" target="_blank" class="track-link">VocabViz: </a> An application that promotes learning new language vocabulary through an interactive AR experience</li>
+                                    <li><a href="https://devpost.com/software/onpause" target="_blank" class="track-link">OnPause: </a> A tool designed to streamline language learning when watching/listening to online streaming, YouTube videos, or podcasts</li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Resources </h3>
+                                <ul>
+                                    <li><a href="https://developers.google.com/classroom/guides/get-started" target="_blank" class="track-link">Google Classroom API: </a> Tools for teachers to facilitate digital learning</li>
+                                    <li><a href="https://conjuguemos.com/" target="_blank" class="track-link"> Conjuguemos: </a> Interactive tool to learn verb conjugations in a variety of languages</li>
+                                    <li><a href="https://www.khanacademy.org/profile/kaid_927284150536721664321295/courses" target="_blank" class="track-link">Khan Academy: </a> Videos and lessons on a variety of topics, including math, science, and grammar</li>
+                                    <li><a href="https://www.duolingo.com/" target="_blank" class="track-link">Duolingo: </a>Online resource for learning new languages</li>
+                                    <li><a href="https://play.typeracer.com/" target="_blank" class="track-link">Typeracer: </a> Fun game to improve typing speed and accuracy</li>
+                                    
+                                    <li><a href="https://www.coursera.org/" target="_blank" class="track-link">Coursera: </a> Online courses on a myriad of topics</li>  
+                                    <li><a href="https://quizlet.com/" target="_blank" class="track-link">Quizlet: </a> Interactive flashcards</li>  
+                                    <li><a href="https://www.edx.org/" target="_blank" class="track-link">EdX: </a> Online courses, including lessons from colleges and universities</li>  
+                                    <li><a href="https://scratch.mit.edu/" target="_blank" class="track-link">Scratch: </a> Block-based coding for computer science education</li>  
+
+                                </ul>
+                            </div>
+                            <div class="bottom-clouds">
+                                <img class="popup-clouds" src="assets/img/track_popup_clouds_back.svg" />
+                                <img id="above-clouds" class="popup-clouds"
+                                    src="assets/img/track_popup_clouds_front.svg" />
+
+                                <img id="popup-building-a" class="building" src="assets/img/building_a.svg" />
+                                <img id="popup-building-b" class="building" src="assets/img/building_b.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Wifi-box" class="track-box">
+                    <img id="communication-label" class="track-text" src="assets/img/communication.svg">
+                    <svg id="Wifi-bb" class="building-bb" viewBox="0 0 232.44 588.16">
+                        <polygon points="0 543.26 100.29 588.16 232.44 514.13 172.19 0 58.44 33.22 0 543.26" />
+                    </svg>
+                    <img id="Wifi" class="vehicle" src="assets/img/Wifi.svg">
+                    <div id="communication-overlay" class="overlay">
+                        <div class="overlay-box">
+                            <img class="popup-road" src="assets/img/tracks_pop_up_road.svg" />
+                            <img class="close-button" src="assets/img/x_tracks.svg">
+                            <img id="Wifi-popup" class="vehicle-popup" src="assets/img/Ambulance.svg">
+                            <h1 class="popup-title"> Communication/ Connectivity </h1>
+
+                            <div class="overlay-text"> 
+                                <h3 class="popup-sub-title"> Description </h3>
+                                <p style = "text-indent : 1em;"> The Connectivity track <b>brings people together, connecting them regardless of their physical locations. </b>These projects provide a platform for individuals to become part of a larger community, opening communication channels (both real-time and asynchronous) to help people connect with long-lost friends, meet new acquaintances with similar interests, challenge existing viewpoints, and more.  </p>
+                                <h3 class="popup-sub-title"> Guiding Questions </h3>
+                                <ul>
+                                    <li>How can technology help us overcome the technological, physical, and psychological barriers that prevent humans from forming meaningful connections with others? </li>
+                                    <li>Which existing technologies are there to improve connectivity, and which ones are missing?</li>
+                                    <li>How might different age groups use these technologies differently? How can we use technology to bridge generational divides?</li>
+                                    <li>What can be built to mitigate feelings of isolation and loneliness (especially during an extended period of social distancing)?</li>
+                                </ul>
+                                <h3 class="popup-sub-title"> Potential Topics </h3>
+                                <ul>
+                                    <li> <b>Virtual Connection: </b>In light of COVID-19, how can we find ways to meet up virtually to maintain social connection? </li>
+                                    <li><b>Fostering Conversation: </b>Now, more than ever, communication is key to improving society. How can technology help people with different opinions have civil discussions that promote understanding of different views?</li>
+                                    <li> <b>Blogging/Vlogging: </b>What can be created to better learn about or share the lives of individuals in different locations with varying backgrounds?</li>
+                                    <li><b>Online Communities: </b>How can we create virtual communities ranging from book clubs to research conferences that connect people based on similar interests or help people find new hobbies?</li>
+                                    <li><b>Gaming: </b>What are games that build communities of people who enjoy playing and encourage collaboration and teamwork?</li>
+                                    <li><b>Social Media: </b>Can you create the next Zoom or maybe even the next Facebook?</li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Past HackMIT Projects </h3>
+                                <ul>
+                                    <li><a href="https://devpost.com/software/hackmit-xdjoke" target="_blank" class="track-link">Civvi: </a> A project that connects individuals to volunteering organizations</li>
+                                    <li><a href="https://devpost.com/software/hackmit2019" target="_blank" class="track-link">CounterPoint: </a> A website that accepts one article and outputs articles with different views on the topic</li>
+                                    <li><a href="https://devpost.com/software/studydate-vxpws8" target="_blank" class="track-link">StudyDate: </a> A personalized learning platform that connects people for study dates</li>
+                                    <li><a href="https://devpost.com/software/rap-scorer" target="_blank" class="track-link">Rap-Scorer: </a> A multiplayer game using speech-to-text technology to score raps!</li>
+                                    <li><a href="https://devpost.com/software/eye-in-the-sky-nm1l3k" target="_blank" class="track-link">Eye in the Sky: </a> An application where users can post info about natural disasters to help notify others </li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Resources </h3>
+                                <ul>
+                                    <li><a href="https://developers.facebook.com/" target="_blank" class="track-link">Facebook APIs: </a> Several Facebook APIs for developers</li>
+                                    <li><a href="https://www.ibm.com/watson/products-services" target="_blank" class="track-link">IBM Watson APIs: </a> APIs for image recognition, analyzing speech, translating languages, and more</li>
+                                    <li><a href="https://www.rev.ai/" target="_blank" class="track-link">Rev.AI: </a> Speech-to-text API to transform audio into written text</li>
+                                    <li><a href="https://developers.google.com/blogger" target="_blank" class="track-link">Blogger API: </a>Connects with the Blogger platform to interact with online blogs.</li>
+                                    <li><a href="https://github.com/Medium/medium-api-docs" target="_blank" class="track-link">Medium API: </a> API to interact with Medium blog posts</li>
+                                    
+                                    <li><a href="https://developers.google.com/calendar" target="_blank" class="track-link">Google Calendar API: </a> Integrates Google Calendar with a new project (e.g. for scheduling events)</li>  
+                                    <li><a href="https://www.twilio.com/docs/video" target="_blank" class="track-link">Twilio Video API: </a> Adds video-calling to your project</li> 
+
+                                </ul>
+                            </div> 
+                            <div class="bottom-clouds">
+                                <img class="popup-clouds" src="assets/img/track_popup_clouds_back.svg" />
+                                <img id="above-clouds" class="popup-clouds"
+                                    src="assets/img/track_popup_clouds_front.svg" />
+
+                                <img id="popup-building-a" class="building" src="assets/img/building_a.svg" />
+                                <img id="popup-building-b" class="building" src="assets/img/building_b.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Construction-box" class="track-box">
+
+                    <img id="urban-label" class="track-text" src="assets/img/urban.svg">
+                    <svg id="Construction-bb" class="building-bb" viewBox="0 0 447.87 431.45">
+                        <polygon
+                            points="2.75 281.07 0 118 203.33 0 447.87 141.21 446.79 328.25 263.13 431.45 2.75 281.07" />
+                    </svg>
+                    <img id="Construction" class="vehicle" src="assets/img/Construction.svg">
+                    <div id="urban-overlay" class="overlay">
+                        <div class="overlay-box">
+                            <img class="popup-road" src="assets/img/tracks_pop_up_road.svg" />
+                            <img class="close-button" src="assets/img/x_tracks.svg">
+                            <img id="Construction-popup" class="vehicle-popup" src="assets/img/Ambulance.svg">
+                            <h1 class="popup-title"> Urban Innovation </h1>
+                            <div class="overlay-text"> 
+                                <h3 class="popup-sub-title"> Description </h3>
+                                <p style = "text-indent : 1em;"> Urban Innovation strives to tackle the <b>emerging social, environmental, economic, cultural, and technological problems facing cities today. </b>This track welcomes any idea that is meant for the betterment of our community, whether it is on a scale as small as a single street or something as large as helping curb climate change. </p>
+                                <h3 class="popup-sub-title"> Guiding Questions </h3>
+                                <ul>
+                                    <li>How can we address the tradeoff between sustainability and affordability?</li>
+                                    <li>What are ways we can improve the rebuilding and opening up of cities?</li>
+                                    <li>How can we address safety issues surrounding transportation?</li>
+                                    <li>How can we improve upon the average person’s carbon footprint?</li>
+                                </ul>
+                                <h3 class="popup-sub-title"> Potential Topics </h3>
+                                <ul>
+                                    <li> <b>Energy & Environment: </b>How can we build technology that helps more people consume energy in a sustainable and affordable way? </li>
+                                    <li><b>Transportation: </b>What are ways we can use technology to encourage public transportation, or usage of private vehicles that are battery-powered?</li>
+                                    <li> <b>Community & Housing: </b>In the face of COVID-19, paying rent has almost been impossible for the majority of Americans that do not own their own houses. How can we use technology to help millions of people find and pay for their shelter?</li>
+                                    <li><b>Civic Engagement: </b>During the past few months, forms of civic engagement, including voting by mail and protesting during the time of social distancing, have become vastly debated topics. What are ways to innovate technology that help citizens address public concerns while staying safe?</li>
+                                    <li><b>Immigration: </b>The flight industry has been one of the most impacted during the COVID-19 crisis, and many have had their immigrations processes disrupted. What are possible technological solutions to combat issues around immigration and ensure safe international travel?</li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Past HackMIT Projects </h3>
+                                <ul>
+                                    <li><a href="https://devpost.com/software/villager-49dkvf" target="_blank" class="track-link">Villager: </a> A webapp that provides live updates of emergencies in your area</li>
+                                    <li><a href="https://devpost.com/software/lgtm" target="_blank" class="track-link">SaveMe: </a> A project that uses speech-to-text to determine whether you are too drunk</li>
+                                    <li><a href="https://devpost.com/software/mpgreen" target="_blank" class="track-link">MPGreen: </a> A system to track past driving history to advise drivers on ways they can save energy</li>
+                                    <li><a href="https://devpost.com/software/homeup" target="_blank" class="track-link">HomeUp: </a> A web application that shows the timeline of prices of a house to help inform your decision</li>
+                                </ul>
+
+                                <h3 class="popup-sub-title"> Resources </h3>
+                                <ul>
+                                    <li><a href="https://www.rev.ai/" target="_blank" class="track-link">Rev.AI: </a> Speech-to-text service</li>
+                                    <li><a href="https://www.nasdaq.com/market-activity/quotes/historical" target="_blank" class="track-link"> Nasdaq Datasets: </a> Current information on home prices and stocks</li>
+                                    <li><a href="https://go.docusign.com/sandbox/productshot/?elqCampaignId=11223&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=developer_api_primary&amp;utm_term=docusign%20api&amp;utm_content=domestic_US&amp;gclid=CjwKCAjwztL2BRATEiwAvnALcqcAKLTXMbBHjg0C_oxHDXFAavd5ZQo6XOSyzIz1nih3Xsr2lRijUhoCPXoQAvD_BwE" target="_blank" class="track-link">DocuSign API: </a> Safe sending of documents to ensure privacy</li>
+                                    <li><a href="http://openxcplatform.com/#:~:text=The%20OpenXC%20Platform,%2C%20even%20beyond%20OBD%2DII." target="_blank" class="track-link">Ford's OpenXC Platform: </a>Help for getting car data and writing custom vehicle functions</li>
+                                    <li><a href="https://developers.google.com/earth-engine" target="_blank" class="track-link">Google Earth API: </a> Analysis with geospatial datasets</li>
+                                    
+                                    <li><a href="https://geopy.readthedocs.io/en/stable/" target="_blank" class="track-link">Geopy: </a> Tool to locate coordinates of places around the world</li>  
+        
+                                </ul>
+                            </div>
+                            <div class="bottom-clouds">
+                                <img class="popup-clouds" src="assets/img/track_popup_clouds_back.svg" />
+                                <img id="above-clouds" class="popup-clouds"
+                                    src="assets/img/track_popup_clouds_front.svg" />
+
+                                <img id="popup-building-a" class="building" src="assets/img/building_a.svg" />
+                                <img id="popup-building-b" class="building" src="assets/img/building_b.svg" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cloud-section flip" id="cloud-section2">
+                <img id="cloud-layer-a" class="cloud-layer" src="assets/img/Cloud_Layer_Flipped.svg" />
+                <img id="cloud-layer-b" class="cloud-layer" src="assets/img/Cloud_Layer_Flipped.svg" />
+                <img id="cloud-layer-c" class="cloud-layer" src="assets/img/Cloud_Layer_Flipped.svg" />
+            </div>
+        </div>
+        <div id="speakers" class="section">
+            <!-- <img class="building" id="upper-left" src="assets/img/building_a.svg" />
+            <img class="building" id="upper-right" src="assets/img/building_b.svg" /> -->
+            <h1 class="header">Speakers</h1>
+            <div class="speaker-heads">
+                <img class="speaker-img grayscale small" id="speaker-a" src="assets/speakers/Linda.jpg" />
+                <img class="speaker-img grayscale medium" id="speaker-b" src="assets/speakers/Luis_von_Ahn_09.jpg" />
+                <img class="speaker-img large" id="speaker-c" src="assets/speakers/tom_preston_warner.png" />
+                <img class="speaker-img grayscale medium" id="speaker-d" src="assets/speakers/pooja.jpg"  />
+                <img class="speaker-img grayscale small" id="speaker-e" src="assets/speakers/Qasar_Younis.png" />
+                <img class="speaker-img grayscale small" id="speaker-f" src="assets/speakers/Aileen_Lee.png" />
+            </div>
+
+            <div class="content speaker-slideshow">
+                <!-- speaker 1 -->
+                <div class="slide" id="slide1">
+                    <div class="speaker-border">
+                        <div class="speaker-description">
+                            <h2>Linda Avey</h2>
+                            <h4>Co-Founder and CEO of Precisely, 23andMe</h4>
+                            <p>Linda Avey is co-founder and CEO of Precisely, a San Francisco-based precision health company utilizing an intelligent agent technology that automates preventive health. They are initially focusing on the health system of India, where population growth is out-pacing clinical capacity. In 2006 Linda envisioned and co-founded 23andMe, which has become the world's largest consumer interactive genetics research platform. The idea stemmed from her work at Affymetrix and Perlegen Sciences, early tech providers in the genetics industry. Her involvement with patient communities cemented the idea that people would be willing to share their data in order to make progress in understanding their diseases. Today, millions of individuals are participating in 23andMe research studies, providing statistical power needed to make significant progress not feasible through academic models.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- speaker 2 -->
+                <div class="slide" id="slide2">
+                    <div class="speaker-border">
+                        <div class="speaker-description">
+                            <h2>Luis von Ahn</h2>
+                            <h4>Co-founder and CEO of Duolingo</h4>
+                            <p>
+                                Luis von Ahn is an entrepreneur and computer science professor at Carnegie Mellon University who is considered one of the pioneers of crowdsourcing. He is known for co-inventing CAPTCHAs, being a MacArthur Fellow and selling two companies to Google in his 20s.
+                                <br>
+                                He is currently the co-founder and CEO of Duolingo, a language-learning platform created to bring free language education to the world. With over 300 million users, it is now the most popular language-learning platform and the most downloaded education app in the world.
+                                <br>
+                                Luis has been named one of the 10 Most Brilliant Scientists by Popular Science Magazine, one of the 50 Best Brains in Science by Discover, one of the Top Young Innovators Under 35 by MIT Technology Review, and one of the 100 Most Innovative People in Business by Fast Company Magazine.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- speaker 3 -->
+                <div class="slide" id="slide3">
+                    <div class="speaker-border">
+                        <div class="speaker-description">
+                            <h2>Tom Preston-Werner</h2>
+                            <h4>Co-founder of Github and Chatterbug</h4>
+                            <p>Tom Preston-Werner is a software developer, inventor, and entrepreneur living and working in San Francisco. He is currently the cofounder and Chief Product Officer of Chatterbug, the best way to learn a foreign language online. He’s also building RedwoodJS, a full-stack JavaScript web framework for the Jamstack. Prior to these, Tom cofounded GitHub in 2008, where he served as CEO and helped grow it into the world’s most popular code collaboration tool. On the side, Tom is an angel investor and philanthropist, with an investment thesis focused on fighting climate change. In his spare time, Tom enjoys flying helicopters, snowboarding, and chasing his three young children around the house while making dinosaur noises. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- speaker 4 -->
+                <div class="slide" id="slide4">
+                    <div class="speaker-border">
+                        <div class="speaker-description">
+                            <h2>Pooja Sankar</h2>
+                            <h4>Founder and CEO of Piazza</h4>
+                            <p>
+                            Pooja Sankar’s life story begins in a village in India. She became a computer scientist and started Piazza to solve the problems she had as one of only three women in her classes. She holds an undergraduate Computer Science degree from IIT, India, a Masters Computer Science degree from University of Maryland, College Park and an MBA from Stanford Business School.
+                            <br>
+                            Piazza Q&A is now the premier social learning platform, helping more than 5 million students learn beyond the traditional classroom in more than 2,000 universities spanning 90 countries. Students use Piazza to work together collaboratively despite differences in learning levels, gender, ethnicity, or socioeconomic status, and instructors address their questions as they arise. While Piazza Q&A enables inclusive learning, the Piazza Network opens up career opportunities.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- speaker 5 -->
+                <div class="slide" id="slide5">
+                    <div class="speaker-border">
+                        <div class="speaker-description">
+                            <h2>Qasar Younis</h2>
+                            <h4>CEO of Applied Intuition</h4>
+                            <p>
+                                Qasar Younis is CEO at Applied Intuition and most recently was the COO at Y Combinator. Prior to YC, Qasar's second startup was funded by YC and acquired by Google Maps. Before startups, Qasar was an automotive engineer at GM and Bosch. He has a Bachelor’s in mechanical engineering from General Motors Institute and an MBA from Harvard Business School.
+
+                                As the foremost enabler of autonomous vehicle development, Applied Intuition equips engineering and product development teams with software that makes it faster, safer, and easier to bring autonomy to market. 
+
+                                Applied’s suite of products, focused on simulation and analytics, delivers sophisticated infrastructure built for scale. Industry leading companies of all sizes use Applied to comprehensively test and rapidly accelerate their autonomous vehicle development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- speaker 6 -->
+                <div class="slide" id="slide6">
+                    <div class="speaker-border">
+                        <div class="speaker-description">
+                            <h2>Aileen Lee</h2>
+                            <h4>Founder & Managing Partner, Cowboy Ventures</h4>
+                            <p>
+                                Aileen is founding Partner at Cowboy Ventures, a team that backs seed-stage technology companies re-imagining work and life through technology, what they call “life 2.0”. Cowboy Ventures works with a wide range of startups from modern enterprise oriented companies like Guild Education and Lightstep to new consumer digital native brands like Dollar Shave Club and Tally.
+                                 
+                                Prior to Cowboy, Aileen was a partner at Kleiner Perkins Caufield & Byers for over a decade, was founding CEO of digital media company RMG Networks and worked at Gap Inc in operating roles.  She has degrees from MIT and HBS, is mom of 3 and wife to a startup founder, and is an Aspen Institute Henry Crown Fellow and co-founder of the non-profit All Raise, aiming to accelerate success for women in the technology ecosystem. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img/Buildings.svg" class="building medium2"/>
+                <img src="assets/img/Prudential.svg" class="building small2"/>
+                <img src="assets/img/Prudential.svg" class="building small3"/>
+            </div>
+            <div class="cloud-section" id="cloud-section3">
+                <img id="cloud-layer-a" class="cloud-layer" src="assets/img/Cloud_Layer_top.svg" />
+                <img id="cloud-layer-b" class="cloud-layer" src="assets/img/Cloud_Layer_top.svg" />
+                <img id="cloud-layer-c" class="cloud-layer" src="assets/img/Cloud_Layer_top.svg" />
+            </div>
+        </div>
+        <div id="faq" class="section">
+            <div class="content">
+                <h1 class="header">Faq</h1>
+                <div class="row">
+                    <div class="column">
+                        <h2 class="faq-header">&nbsp; General</h2>
+                        <br />
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            What is a hackathon?
+                        </div>
+                        <div class="answer">HackMIT is a weekend-long event where thousands of students from around the
+                            world 🌎 come together to work on cool new software 🕹 and/or hardware 🛠 projects. Websites
+                            🖥 and mobile apps 📱 are common types of hacks, but you can build anything! Think outside
+                            of the box! 📦</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            When is HackMIT?
+                        </div>
+                        <div class="answer"> This year, we will be extending HackMIT to 3️⃣6️⃣ hours! It will start on
+                            Friday evening in the east coast, and end Sunday morning on the weekend of September
+                            1️⃣8️⃣-2️⃣0️⃣ :)</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                            What's the cost 💰?
+                        </div>
+                        <div class="answer">Admission is free and includes mentors, workshops, $wag, resources,
+                            and a memorable experience!</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            Where’s the schedule?
+                        </div>
+                        <div class="answer">We'll release a more detailed 🗓 schedule in August. For now, know that
+                            we’re planning for opening ceremony to start Friday at 9pm EDT and for closing ceremony to
+                            end Sunday mid-afternoon.</div>
+                                                <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            But I’ve never hacked!
+                        </div>
+                        <div class="answer">That's totally okay! This year at HackMIT we'll be hosting a series of
+                            beginner workshops where you can start getting your hands 🤝 dirty with all things
+                            hackathon-y. Those who attend the beginner workshops are also eligible for the beginner prize! 🏅</div>
+                        <div class="question">
+                            <span> <img class="toggle" src="assets/img/red_arrow.svg"></img></span> 
+                            I have more questions⁉️
+                        </div>
+                        <div class="answer">Please email us at <a class="link" href="help%40hackmit.html"> <span class="__cf_email__" data-cfemail="5c3439302c1c343d3f3731352872332e3b">[email&#160;protected]</span> </a> if you've got any questions or concerns! We’d love to help you out :)</div>
+                        <div class="question">
+                            <span> <img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                            A question for you:
+                        </div>
+                        <div class="answer">Is a hotdog 🌭 a sandwich 🥪? Is cereal 🥣 a soup 🍲? Help our team decide
+                            on these cRiTIcAL questions by sending your answers to <a class="link" href="idk%40hackmit.html"><span class="__cf_email__" data-cfemail="8de4e9e6cde5eceee6e0e4f9a3e2ffea">[email&#160;protected]</span></a> (and any other memes
+                            you want to share). Our favorite response may win a prize! Bonus points for sending us a
+                            floppy disk!</div>
+                    </div>
+                    <div class="column">
+                        <h2 class="faq-header">&nbsp; Virtual</h2>
+                        <br />                     
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            How does a virtual 🌐 hackathon work?
+                        </div>
+                        <div class="answer">We will 🅱️e announcing more details in the coming months, 🅱️ut all of the
+                            essential parts of our event will remain the same! You'll still get to meet other hackers,
+                            talk to our sponsors 💸, listen to prominent leaders 🧑‍💼 in tech, and win amazing prizes
+                            🎖!</div>
+                            <div class="question">
+                                <span> <img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                                What tech or tools should I 🅱️ring?
+                            </div>
+                            <div class="answer">Probably a computer 💻, some cool ideas 💡, and a lot of enthusiasm 💪</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            Will there $till be $wag? 🤑
+                        </div>
+                        <div class="answer">If you reside in the United States 🇺🇸, then we'll 🚢 ship 📬 $wag to you
+                            free of charge! Unfortunately, due to shipping restrictions we aren't able to ship $wag
+                            internationally 😢</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            What if I have a slow Internet connection?
+                        </div>
+                        <div class="answer">You should have no issues participating in our event as long as your
+                            Internet connection can handle the bandwidth of a standard video 🎥 call or livestream. Just
+                            make sure to download large SDKs or developer tools in advance!</div>
+                        <div class="question">
+                            <span> <img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                            What about hardware hacks?
+                        </div>
+                        <div class="answer">Unfortunately, we aren't able to provide supplies for hardware hacks this
+                            year 😢, but if you're really passionate, that shouldn't stop you from building them!</div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h2 class="faq-header">&nbsp; Registration</h2>
+                        <br />
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            Can I attend?
+                        </div>
+                
+                        <div class="answer">If you are a high school 🏫 student or a college 🎓 undergraduate (MIT M.Eng
+                            included) AND you are at least 13 years old, then yes!</div>
+                            <div class="question">
+                                <span> <img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                                What if I can't attend?
+                            </div>
+                            <div class="answer">If you're not currently a student and you want to help 🤝 out, <a class="link" href="https://go.hackmit.org/volunteer" target="_blank">sign up here</a> to help mentor 👨‍🏫👩‍🏫 and/or judge 👩‍⚖️ our hackers! If you have any questions, let us know at <a class="link" href="https://archive.hackmit.org/cdn-cgi/l/email-protection#ee9881829b809a8b8b9cae868f8d8583879ac0819c89" target="_blank"><span class="__cf_email__" data-cfemail="d1a7bebda4bfa5b4b4a391b9b0b2babcb8a5ffbea3b6">[email&#160;protected]</span></a>!</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                            When is registration?
+                        </div>
+                        <div class="answer">
+                            Look out for the opening of HackMIT 2020 registration in July! This year, we'll have two
+                            rounds of admissions: <br>
+                            <br>Round 1️⃣ opens July 8th  and closes July 24th, 🕛 11:59pm PDT.<br>
+                            <br>Round 2️⃣ opens July 25th and closes August 7th, 🕛 11:59pm PDT.<br>
+                            <br>Teams will be admitted by rounds, and results from Round 1️⃣ will be released before
+                            results from Round 2️⃣. Results from each round will be released two weeks after the round ends and applicants will have one week to confirm.<br></div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            Can my team apply in different rounds?
+                        </div>
+                        <div class="answer">Y⭕u'll need t⭕ apply in the same r⭕und as y⭕ur teammates t⭕ be c⭕nsidered as
+                            a team during admissions.</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            What if I go to MIT?
+                        </div>
+                        <div class="answer">All MIT 🏛 students will need to submit an application. If you're an
+                            incoming MIT freshman, you will receive automatic admission, but you'll still need to fill
+                            out an application to be guaranteed a spot at HackMIT!</div>
+                        <div class="question">
+                            <span> <img class="toggle" src="assets/img/blue_arrow.svg"></img></span> 
+                            Is there an admissions puzzle again?
+                        </div>
+
+                        <!-- ... where did it all begin? ... -->
+                        <div class="answer">༼つ ◕_◕ ༽つ༼つ ◕_◕ ༽つ༼つ ◕_◕ ༽つ</div>
+
+                    </div>
+                    <div class="column">
+                        <h2 class="faq-header">&nbsp; Tracks & Teams</h2>
+                        <br />
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            What are tracks at a hackathon? 🛤
+                        </div>
+                        <div class="answer">To help focus your ideation 🧠 process, we’ve developed four tracks, or
+                            impact areas, for you to hack in. The top project within each track will be awarded a prize
+                            🏆. We can’t wait to see what problems you tackle with your project!</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                                How will tracks and prizes 🥇 work?
+                        </div>
+                        <div class="answer">You'll have the opportunity to submit your project to 1️⃣ (and only one!) of
+                            our tracks, making you eligible for that track prize! During our event, we'll also be
+                            providing each track with its own set of ideation resources.</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            Do I have to submit to a track?
+                        </div>
+                        <div class="answer">You're not required to submit your hack to a track, but you will need to in
+                            order to be considered for our track prizes. Tracks are meant to enhance the hacker
+                            experience, but if there truly isn't a track for you, don't worry! Projects submitted
+                            without a track are still eligible for sponsor challenges and HackMIT grand prizes 🏆🏆🏆.
+                        </div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/yellow_arrow.svg"></img></span>
+                            Do I have to submit a project if I attend?
+                        </div>
+                        <div class="answer">If you don't submit a project, you can still attend our workshops and listen 👂 to our 
+                            awesome speakers! However, in order to receive $wag, you must submit a project.</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/blue_arrow.svg"></img></span>
+                            How do teams work?
+                        </div>
+                        <div class="answer">Your team can have up to 4️⃣ people! You can select teammates 🤼 when you register, or you can register 
+                            individually without specified teammates. We’ll admit by teams, so rest assured you’ll be able to hack with your friends!</div>
+                        <div class="question">
+                            <span><img class="toggle" src="assets/img/red_arrow.svg"></img></span>
+                            What if I don’t have a team?
+                         </div>
+                        <div class="answer">If you don’t have a team now, that’s okay 👌! We’ll have team formation and ideation events geared towards helping you find people to work with.</div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sponsors" class="section">
+            <div class="content">
+                <h1 class="header">Sponsors</h1>
+                <div class="sponsor-container">
+                    <!-- <h2 id="sponsor-call">Interested in sponsoring HackMIT 2020? Email us at <a href="mailto:sponsor@hackmit.org">sponsor@hackmit.org</a>!</h2> -->
+                    <div class="sponsor">
+                        <!--Plat Tier Sponsors -->
+                        <a href="https://www.cmtelematics.com/" class = "sponsor --t4">
+                            <img src="assets/logos/CMT-plat.png" />
+                        </a>
+                        <a href="https://www.intersystems.com/" class = "sponsor --t4">
+                            <img src="assets/logos/intersystems-plat.png" />
+                        </a>
+                    </div>
+                    <div class="sponsor">
+                        <!--Gold Tier Sponsors-->
+                        <a href="https://www.yext.com/" target="_blank" class = "sponsor --t3">
+                            <img src="assets/logos/Yext-gold.png" />
+                        </a>
+                        <a href="https://drw.com/" target="_blank" class="sponsor --t3" >
+                            <img src="assets/logos/drw.png" style="max-height:5vw;"/>
+                        </a>
+                        <a href="https://developer.ibm.com/callforcode/" target="_blank" class = "sponsor --t3" >
+                            <img src="assets/logos/ibm.png" style="max-height:10vw;"/>
+                        </a>
+                    </div>
+                    <div class="sponsor">
+                        <!--Silver Tier Sponsors-->
+                        <a href="https://www.citadel.com/" class = "sponsor citadel-logo">
+                            <img src="assets/logos/Citadel-Silver.png" />
+                        </a>
+                        <a href="https://about.fb.com/company-info/" target="_blank" class = "sponsor --t2">
+                            <img src="assets/logos/Facebook-silver.svg" />
+                        </a>
+                        <a href="https://www.arrowstreetcapital.com/" target="_blank" class = "sponsor --t2">
+                            <img src="assets/logos/arrowstreet-silver.png" />
+                        </a>
+                        <a href="https://www.goldmansachs.com/" target="_blank" class = "sponsor --t2">
+                            <img src="assets/logos/goldman_sachs-silver.jpg" />
+                        </a>
+                    </div>
+                    <div class="sponsor">
+                        <!--Bronze Tier Sponsors-->
+                        <a href="https://www.pega.com/" class = "sponsor --t1">
+                            <img src="assets/logos/Pega-bronze.png" />
+                        </a>
+                        <a href="https://www.ocaventures.com/" class = "sponsor --t1">
+                            <img src="assets/logos/OCA.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cloud-section flip" id="cloud-section4">
+                <img id="cloud-layer-a" class="cloud-layer " src="assets/img/Cloud_Layer_top.svg" />
+                <img id="cloud-layer-b" class="cloud-layer " src="assets/img/Cloud_Layer_top.svg" />
+                <img id="cloud-layer-c" class="cloud-layer " src="assets/img/Cloud_Layer_top.svg" />
+            </div>
+        </div>
+        <div id="footer" class="section">
+            <div class="content">
+                <h1 class="header" style="visibility: hidden;">Footer</h1>
+                <div class="countdown">
+                    <div id="countdown-border"></div>
+                    <img src="assets/img/Individual_Logo.png" />
+                    <div id="countdown-right">
+                        <p id="countdown-train-departs">THE TRAIN DEPARTS IN</p>
+                        <div id="countdown-timer">
+                            <div class="countdown-circle">
+                                <p id="days" class="countdown-number"></p>
+                                <p class="countdown-text">DAYS</p>
+                            </div>
+                            <p class="countdown-semicolon">:</p>
+                            <div class="countdown-circle">
+                                <p id="hours" class="countdown-number"></p>
+                                <p class="countdown-text">HOURS</p>
+                            </div>
+                            <p class="countdown-semicolon">:</p>
+                            <div class="countdown-circle">
+                                <p id="minutes" class="countdown-number"></p>
+                                <p class="countdown-text">MINUTES</p>
+                            </div>
+                            <p class="countdown-semicolon">:</p>
+                            <div class="countdown-circle">
+                                <p id="seconds" class="countdown-number"></p>
+                                <p class="countdown-text">SECONDS</p>
+                            </div>
+                        </div>
+                        <div id="countdown-status">
+                            <p class="countdown-status-text">STATUS</p>
+                            <p class="countdown-status-text">:</p>
+                            <p id="countdown-status-arrived" class="countdown-ontime-text"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="more-footer-wrap">
+                <div class="more-footer">
+                <div class="icon-group">
+
+                    <a target="_blank" href="https://www.facebook.com/HackMIT"> <img class="social-icon" src="assets/socials/facebook.svg"/> </a>
+                    <a target="_blank" href="https://www.instagram.com/hackmit/"> <img class="social-icon" src="assets/socials/instagram.svg"/> </a>
+                    <a target="_blank" href="https://code.hackmit.org/"> <img class="social-icon" src="assets/socials/code.svg"/></a>
+                </div>
+                <p class="attribution">
+                <a href="https://archive.hackmit.org/" class="link" style="color:#26acc5">View HackMIT Archive</a> <br/>
+                Copyright © 2020 HackMIT. <br>
+                Code Released under MIT License. <br>
+                </p>
+                <div class="icon-group">
+                    <a target="_blank" href="https://medium.com/hackmit-stories"> <img class="social-icon" src="assets/socials/medium.svg"/></i> </a>
+                    <a target="_blank" href="https://twitter.com/hackmit"> <img class="social-icon" src="assets/socials/twitter.svg"/></a>
+                    <a target="_blank" href="https://archive.hackmit.org/cdn-cgi/l/email-protection#8df9e8ece0cde5eceee6e0e4f9a3e2ffea"><img class="social-icon" src="assets/socials/mail.svg"/></a>
+                </div>
+                </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/img/Buildings.svg" class="building medium3"/>
+                <img src="assets/img/Prudential.svg" class="building small4"/>
+            </div>
+        </div>
+        <div class="footer_blm" > 
+            <div class="blm_slide">
+                <div class=blm_content>
+                    HackMIT stands in support of the Black Lives Matter (BLM) movement, and thanks to your help, <br> we will be splitting 
+                    <span style="color: #ffdf3f">$2,000 </span>
+                    in donations to these causes:
+                </div>
+                <div class=blm_content>
+                    <ul id="blm_list">
+                        <li><a href=https://www.blackgirlscode.com/ target="_blank"  style="color: #fbcdc2">Black Girls Code</a>: A non-profit organization working to provide technology education for African-American girls.</li> 
+                        <li><a href=https://www.joincampaignzero.org/ target="_blank"  style="color: #fbcdc2">Campaign Zero</a>: A non-profit organization leading an effort to research and introduce policy-based solutions to police brutality in the United States.</li>
+                        <li><a href=https://www.naacpldf.org/ target="_blank"  style="color: #fbcdc2">NAACP LDF</a>: A non-profit organization fighting for racial justice through litigation, advocacy, and public education.</li>
+                    </ul>
+                    
+                </div>
+                <div class=blm_content>
+                    While we are no longer matching donations, we encourage you to continue empowering and supporting the Black community, whether this means continuing to donate or signing petitions. We will also be taking this time to educate ourselves, and we urge you to do the same by visiting
+                    <a href=https://blacklivesmatters.carrd.co/ target="_blank" class=blm_link style="color: #ffdf3f">https://blacklivesmatters.carrd.co/</a>, and 
+                    
+                    <a href=https://docs.google.com/document/d/1BRlF2_zhNe86SGgHa6-VlBO-QgirITwCTugSfKie5Fs/edit target="_blank" class=blm_link style="color: #ffdf3f">bit.ly/ANTIRACISMRESOURCES</a>
+                     to learn more about how you can act in this time of need.
+                </div>
+            </div>
+            <div class=blm_button>Help support the Black Lives Matter movement.</div>
+        </div>
+
+    </div>
+
+    
+    <!-- ... it's contained inside... -->
+    <china>
+        <wuhan>
+            <laboratory>
+                <div style="display:none">
+                    <div class="corona"></div>
+                </div>
+            </laboratory>
+        </wuhan>
+    </china>
+    <!-- don't let it out!  -->
+    
+    <script data-cfasync="false" src="https://archive.hackmit.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://kit.fontawesome.com/00e49ff449.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/rellax.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/faq.js"></script>
+    <script type="text/javascript" src="js/tracks.js"></script>
+    <script type="text/javascript" src="js/speakers.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63828172-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+
+
+<!-- Mirrored from archive.hackmit.org/2020/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2023 19:06:35 GMT -->
+</html>
