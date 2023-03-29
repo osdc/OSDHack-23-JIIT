@@ -159,7 +159,7 @@ html {
   }
 }
 .section#speakers {
-  min-height: 98.262vw;
+  /* min-height: 98.262vw; */
   background-image: url(../assets/img/Speakers_Background.svg);
   padding-bottom: 75px;
 }
@@ -194,7 +194,7 @@ html {
 }
 .header {
   text-align: center;
-  padding-top: 9.54vw;
+  padding-top: 50px;
   font-size: 4vw;
   color: #001d55;
   letter-spacing: 0.1em;
