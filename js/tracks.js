@@ -1,3 +1,4 @@
+
 const vehicles = [{"id": "Ambulance", "p_id": "health-tech", "l_id": "health-label", "t_id":"health"}, {"id": "Bus", "p_id": "education", "l_id": "education-label", "t_id":"education"}, {"id": "Wifi", "p_id": "communication-connectivity", "l_id": "communication-label", "t_id":"communication"}, {"id": "Construction", "p_id": "urban-innovation", "l_id": "urban-label", "t_id":"urban"}]
 
 const beg_filepath = "./assets/img/"
