@@ -1119,11 +1119,14 @@ html {
   }
 }
 #cover #cover-desktop .logo {
-  position: absolute;
+  /* float: left; */
   top: 15px;
   left: 15px;
   width: 80px;
+  position: absolute;
 }
+
+
 @media (max-width: 768px) {
   #cover #cover-desktop .logo {
     visibility: hidden;
