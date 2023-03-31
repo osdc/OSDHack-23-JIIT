@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
-    <link rel="icon" href="assets/favicons/favicon.svg" type="image/svg">
+    <link rel="icon" href="assets/img/osdhack.png" type="image/png">
     <title>OSDHACK'23</title>
     <meta name="description" content="OSDHACK 2023: BACK TO THE FUTURE!" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -62,6 +62,12 @@
     <meta property="twitter:description" content="Join us at JIIT's largest hackathon. September 18-20!" />
     <meta property="twitter:image" content="./assets/favicons/train_cover.png" />
     <meta property="twitter:image:alt" content="OSDHACK 2023, September ." />
+    <style>
+        #discord:hover {
+            background-color: transparent;
+            border: 1px solid #1b4481;
+        }
+    </style>
 </head>
 
 <body>
@@ -75,7 +81,7 @@
                             <a href="#cover" class="navbar-btn hidden-mobile">
                                 <h4 class="navbar-txt">Home</h4>
                             </a>
-                            <a href="#tracks" class="navbar-btn">
+                            <a href="#speakers" class="navbar-btn">
                                 <h4 class="navbar-txt">About</h4>
                             </a>
                             <a href="#speakers" class="navbar-btn">
@@ -87,7 +93,7 @@
                             <!-- <a href="#sponsors" class="navbar-btn">
                                 <h4 class="navbar-txt">Sponsors</h4>
                             </a> -->
-                            <a href="#" class="navbar-btn apply hidden-mobile">
+                            <a href="rules.html" class="navbar-btn apply hidden-mobile">
                                 <h4 class="navbar-txt no-underline">Rules & FAQ</h4>
                             </a>
                         </div>
@@ -101,7 +107,16 @@
                         <!-- <img id="title-header-outline" src="./assets/img/Outline_Text.svg" /> -->
                         <h4 id="title-sub">  BACK TO THE FUTURE</h4>
                         <h4 id="title-date">april 21-24, 2023</h4>
+                        <a href="https://discord.gg/kAH6WdNchQ" target="_blank">
+                            <button id="discord" style="font-family: LemonMilkMedium;margin-top:20px;border:none;padding: 10px 25px;border-radius: 3px;background-color: #1b4481;color: white;">
+                                Discord Invite
+                            </button>
+                        </a>
+                        
                     </div>
+                    
+                    
+                    
                 </div>
                 <div id="cover-mobile">
                     <div class="menu">
@@ -458,7 +473,11 @@
                 </h3>
             </div>
             
-            
+            <h1 class="header">Prizes</h1>
+            <div class="speaker-heads" style="border-radius: 10px;margin-bottom:50px;padding:70px 15px;background-color: rgba(255,255,255,0.4);width:75%;margin-left: 12%;">
+                <h3 style="font-size: 24px;">TO BE ANNOUNCED</h3>
+            </div>
+
             <h1 class="header">Speakers</h1>
             <div class="speaker-heads" style="border-radius: 10px;margin-bottom:50px;padding:70px 15px;background-color: rgba(255,255,255,0.4);width:75%;margin-left: 12%;">
                 <h3 style="font-size: 24px;">TO BE ANNOUNCED</h3>
@@ -915,19 +934,21 @@
                 <div class="more-footer-wrap">
                 <div class="more-footer">
                 <div class="icon-group">
-                    <a target="_blank" href="https://www.facebook.com/OSDHACK"> <img class="social-icon" src="assets/socials/facebook.svg"/> </a>
                     <a target="_blank" href="https://www.instagram.com/osdcjiit/"> <img class="social-icon" src="assets/socials/instagram.svg"/> </a>
+                    <a target="_blank" href="mailto:osdhack23@gmail.com"><img class="social-icon" src="assets/socials/mail.svg"/></a>
                     <!-- <a target="_blank" href="https://code.OSDHACK.org/"> <img class="social-icon" src="assets/socials/code.svg"/></a> -->
                 </div>
                 <p class="attribution">
-                <a href="https://www.github.com/osdc" class="link" style="color:#26acc5">View OSDC Archive</a> <br/>
+                <b>Venue-</b>&nbsp;JIIT, Sector-62<br>
+                <b>Email-</b>&nbsp;osdhack23@gmail.com<br>
+                <a href="https://discord.gg/kAH6WdNchQ"><b><u>Discord Link</u></b></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/osdc"><b><u>Github Link</u></b></a>
                 <!-- All rights reserved. <br>
                 Code Released under JIIT License. <br> -->
                 </p>
                 <div class="icon-group">
                     <!-- <a target="_blank" href="https://medium.com/OSDHACK-stories"> <img class="social-icon" src="assets/socials/medium.svg"/></i> </a> -->
                     <a target="_blank" href="https://twitter.com/osdcjiit"> <img class="social-icon" src="assets/socials/twitter.svg"/></a>
-                    <a target="_blank" href="mailto:osdhack23@gmail.com"><img class="social-icon" src="assets/socials/mail.svg"/></a>
+                    <a target="_blank" href="https://www.facebook.com/OSDHACK"> <img class="social-icon" src="assets/socials/facebook.svg"/> </a>
                 </div>
                 </div>
                 </div>
@@ -996,7 +1017,4 @@
       ga('send', 'pageview');
     </script>
 </body>
-
-
-<!-- Mirrored from archive.OSDHACK.org/2023/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2023 19:06:35 GMT -->
 </html>
