@@ -88,7 +88,7 @@ clouds.forEach((cloud, i) => {
   
   elem.id = "floating-cloud" + i
   elem.classList.add("floating-cloud")
-  elem.src = cloud.flip ? "./assets/img/Cloud_Flipped.svg" : "./assets/img/Cloud.svg"
+  //elem.src = cloud.flip ? "./assets/img/Cloud_Flipped.svg" : "./assets/img/Cloud.svg"
   
   wrap.appendChild(elem)
   document.getElementById("body-container").appendChild(wrap)
