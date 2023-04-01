@@ -188,7 +188,6 @@ html {
   margin-bottom: 0;
   background-size: cover;
 }
-
 @media (max-width: 576px) {
   .section#footer {
     min-height: 78.6573vw;
@@ -1572,6 +1571,11 @@ html {
   left: 9vw;
   opacity: 0.7;
 }
+
+#discord {
+  cursor: pointer;
+}
+
 #speakers .speaker-border {
   display: inline-block;
   width: 85vw;
