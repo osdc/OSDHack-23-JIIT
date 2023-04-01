@@ -1527,10 +1527,17 @@ html {
 }
 @media (min-width: 700px) {
   #speakers .speaker-heads {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto
   }
 }
+
+@media (min-width:992px) {
+  .in-coordinators {
+    display: none;
+  }
+}
+
 #speakers .building {
   position: absolute;
   -webkit-mask-image: -webkit-gradient(
