@@ -1261,7 +1261,7 @@ html {
   margin: 2px 0;
 }
 #cover #cover-mobile .logo {
-  width: 65%;
+  width: 55%;
   height: 50%;
   margin: 15px auto;
 }
@@ -2183,6 +2183,12 @@ html {
   #footer .more-footer-wrap .more-footer {
     margin-bottom: 14vw;
     font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 #footer .more-footer-wrap .more-footer p {
@@ -4133,7 +4139,7 @@ ul li:nth-child(even) div {
 
 time {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   display: block;
   margin-bottom: 10px;
 }
