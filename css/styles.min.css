@@ -174,6 +174,13 @@ html {
   -webkit-box-shadow: 0 30px 15px 10px #fff;
   box-shadow: 0 30px 15px 10px #fff;
 }
+
+@media (max-width: 992px) {
+  .section#footer {
+    display: none;
+  }
+}
+
 .section#footer {
   min-height: 60.1497vw;
   height: 60.1497vw;
@@ -1477,6 +1484,25 @@ html {
   background-image: linear-gradient(to right, #96d0f1 100%, transparent 0);
   background-size: 24vw 0.954vw;
 }
+
+#coordinators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 889px) {
+  #coordinators {
+    display: block;
+  }
+}
+
 #speakers .speaker-heads {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1488,8 +1514,8 @@ html {
   justify-content: space-around;
   height: auto;
   margin-top: 2em;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto
 }
 #speakers .speaker-heads .speaker-img {
   position: relative;
@@ -1500,10 +1526,17 @@ html {
 }
 @media (min-width: 700px) {
   #speakers .speaker-heads {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto
   }
 }
+
+@media (min-width:992px) {
+  .in-coordinators {
+    display: none;
+  }
+}
+
 #speakers .building {
   position: absolute;
   -webkit-mask-image: -webkit-gradient(
@@ -1538,6 +1571,11 @@ html {
   left: 9vw;
   opacity: 0.7;
 }
+
+#discord {
+  cursor: pointer;
+}
+
 #speakers .speaker-border {
   display: inline-block;
   width: 85vw;
