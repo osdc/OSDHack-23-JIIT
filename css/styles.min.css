@@ -288,6 +288,13 @@ html {
   bottom: -38vw;
 }
 @media (max-width: 768px) {
+  #reg_button{
+    position: absolute;
+    z-index: 1331321;
+    top: 200px;
+  
+
+  }
   .cloud-section#cloud-section2 {
     bottom: -41vw;
   }
