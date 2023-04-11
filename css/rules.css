@@ -5,6 +5,7 @@
 body {
   color: #f6f7f7;
   font-family: LemonMilkMedium;
+  background-size: 150%;
   /* background-image: url('assets/img/osdhack-title.png'); */
 }
 
@@ -144,6 +145,9 @@ h1{
 }
 
 @media only screen and (max-width: 767px) {
+  body{
+    background-size: 460%;
+  }
   .navbar-brand {
     margin: 15px 15px;
   }
