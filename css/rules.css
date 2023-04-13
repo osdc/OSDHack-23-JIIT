@@ -146,7 +146,7 @@ h1{
 
 @media only screen and (max-width: 767px) {
   body{
-    background-size: 460%;
+    background-size: 540%;
   }
   .navbar-brand {
     margin: 15px 15px;
