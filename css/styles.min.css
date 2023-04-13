@@ -276,6 +276,33 @@ html {
 .cloud-section#cloud-section1 {
   top: -4vw;
 }
+
+.prize-card{
+  border-radius: 5%;
+  background-color: #ebdfdb;
+  width: 20rem;
+  height: 20rem;
+}
+
+.mini-prize-card{
+  border-radius: 5%;
+  background-color: #ebdfdb;
+  width: 15rem;
+  height: 15rem;
+}
+
+.prize-img{
+  max-height: 240px; max-width: px; margin-bottom: 10px; transition: transform 0.3s ease; position: relative;
+   top: -3.5rem;
+   right: 3rem;
+}
+
+.prize-value{
+  color: #001d55;
+  position: relative;
+  top: -4rem;
+}
+
 @media (max-width: 1200px) {
   .cloud-section#cloud-section1 {
     top: -8vw;
@@ -296,6 +323,17 @@ html {
   }
   .cloud-section#cloud-section2 {
     bottom: -41vw;
+  }
+  .prize-card{
+    width: 17rem;
+    height: 17rem;
+  }
+  .prize-img{
+    top: -3.5rem;
+    right: 4.5rem;
+  }
+  .prize-value{
+    top: -6rem;
   }
 }
 @media (max-width: 576px) {
