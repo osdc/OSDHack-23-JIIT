@@ -144,9 +144,59 @@ h1{
   margin-bottom: 1.5%;
 }
 
+.style-two {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(221, 10, 55, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  width: 60%;
+}
+
+.style-two:nth-child(2){
+  width: 100%;
+}
+
+
 @media only screen and (max-width: 767px) {
   body{
-    background-size: 540%;
+    width: 80%;
+    background-size: 1040%;
+  }
+  .rules_heading{
+    position: relative;
+    left: -0.65rem;
+  }
+  .faq{
+    position: relative;
+    left: 1.6rem;
+  }
+  .faq_heading{
+    position: relative;
+    left: -7rem;
+  }
+
+  .style-two:nth-child(2){
+    position: relative;
+    right: 7.2rem;
+    width: 50%;
+  }
+  li{
+    position: relative;
+    left: -2.2rem;
+    font-size: 15px;
+  }
+  .faq-label{
+    width: 70%;
+    font-size: 15px;
+
+  }
+  .faq-answer{
+    width: 70%;
+    font-size: 15px;
   }
   .navbar-brand {
     margin: 15px 15px;
@@ -344,19 +394,4 @@ h1{
     flex-direction: column;
     gap: 1rem;
   }
-}
-.style-two {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(221, 10, 55, 0.75),
-    rgba(0, 0, 0, 0)
-  );
-  width: 60%;
-}
-
-.style-two:nth-child(2){
-  width: 100%;
 }
