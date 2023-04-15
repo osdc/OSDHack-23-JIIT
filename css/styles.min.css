@@ -297,6 +297,10 @@ html {
    right: 3rem;
 }
 
+.prize-img-ex{
+  max-height: 240px; max-width: px; margin-bottom: 10px; transition: transform 0.3s ease;
+}
+
 .prize-value{
   color: #001d55;
   position: relative;
