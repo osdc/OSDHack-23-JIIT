@@ -298,7 +298,8 @@ html {
 }
 
 .prize-img-ex{
-  max-height: 240px; max-width: px; margin-bottom: 10px; transition: transform 0.3s ease;
+  max-height: 240px; max-width: px; margin-bottom: 10px; transition: transform 0.3s ease; position: relative;
+  top: -2rem;
 }
 
 .prize-value{
