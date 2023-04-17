@@ -223,6 +223,13 @@ h1{
   }
 
 }
+.logo {
+  /* float: left; */
+  top: 15px;
+  left: 15px;
+  width: 80px;
+  position: absolute;
+}
 
 #header.transparent-navbar:not(.fixed-navbar) .navbar-brand .logo .logo-img {
   display: none;
