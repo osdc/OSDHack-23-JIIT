@@ -166,13 +166,9 @@ h1{
     width: 80%;
     background-size: 1040%;
   }
-  .rules_heading{
-    position: relative;
-    left: -0.65rem;
-  }
   .faq{
     position: relative;
-    left: 1.6rem;
+    left: 2.3rem;
   }
   .faq_heading{
     position: relative;
@@ -186,7 +182,7 @@ h1{
   }
   li{
     position: relative;
-    left: -2.2rem;
+    left: -2rem;
     font-size: 15px;
   }
   .faq-label{
