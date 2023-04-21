@@ -237,7 +237,7 @@ window.onscroll = () => {
 
 
 // countdown timer
-var countDownDate = new Date("april 21, 2023 17:00:00 EDT").getTime();
+var countDownDate = new Date("april 21, 2023 11:32:00 EDT").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
